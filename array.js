@@ -29,14 +29,14 @@
 
 
 
-const arr = [1, 2, 3, 4];
-let total = 0;
+// const arr = [1, 2, 3, 4];
+// let total = 0;
 
-for (let value of arr) {
-    // console.log(value);
-    total += value; 
-}
-console.log(total*2)
+// for (let value of arr) {
+//     // console.log(value);
+//     total += value; 
+// }
+// console.log(total*2)
 
 
 // let array = [1, 2, 3, 4];
@@ -49,3 +49,20 @@ console.log(total*2)
 
 // console.log(total)
 
+
+// const arr = [1, 2, 3, 4];
+// let total = 0;
+
+// arr.map((item)=>{
+//     return total += item
+// })
+
+// console.log(total*2);
+
+
+const arr = [1, 2, 3, 4];
+
+const sum = arr.reduce((pre, next)=>{
+    return pre + next
+},0)
+console.log(sum*2);
