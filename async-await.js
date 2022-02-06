@@ -50,6 +50,8 @@ async function course() {
 
 course()
 
+console.log("final");
+
 // enroll()
 //    .then(progress)
 //    .then(getCertificate)

@@ -4,13 +4,13 @@ const mark = 70;
 function enroll() {
   console.log("Enroll progress...");
   const promise = new Promise(function (resolve, reject) {
-    setTimeout(function () {
+    // setTimeout(function () {
       if (payment) {
         resolve();
       } else {
         reject("Payment fail");
       }
-    }, 2000);
+    // }, 2000);
   });
   return promise;
 }
@@ -18,13 +18,13 @@ function enroll() {
 function progress() {
   console.log("completing...");
   const promise = new Promise(function (resolve, reject) {
-    setTimeout(function () {
+    // setTimeout(function () {
       if (mark > 60) {
         resolve();
       } else {
         reject("Fail");
       }
-    }, 3000);
+    // }, 3000);
   });
   return promise;
 }
@@ -46,3 +46,5 @@ enroll()
    .catch(function(err){
        console.log(err);
    })
+
+   console.log("final");
